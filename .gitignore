@@ -1,5 +1,3 @@
 .DS_Store
-lesson-02/node_modules/
-lesson-02/package-lock.json
-lesson-03/node_modules/
-lesson-03/package-lock.json
+lesson-2/node_modules/
+lesson-2/package-lock.json
