@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+     Task 1
+     Create a class Man, the class should describe a person and contain the properties name, age, passport, sex.
+     Create a man object based on it. Print the object to the console.
+
+     Task 2
+     Create an Employer class that will inherit from Man.
+     The class must contain fields create - start date, salary.
+     Create an employer object based on Employer. Fill in the fields, output to the console.
+
+     Task 3
+     Add a render method to the Man class, which will display all the fields of the object created based on the Man class (in paragraphs).
+
+     Task 4
+     Apply the render method to man and output its contents to .out-1.
+
+     Task 5
+     Apply the render method to the employer and output its contents to .out-2. As you can see, the create, salary fields are not displayed.
+
+     Task 6
+     Since the Employer's render method does not display all the new fields, it is desirable to add them.
+     First, let's do it head-on - just create the render method again in Employer (copy it from Man) and add new fields to the "front". Make sure the method works.
+
+     Task 7
+     But, overwriting methods is a so-so idea, what's the point of inheritance then?
+     Let's try to complete the method. Comment out the render method in Employer. Now write:
+
+     render(x) {
+         super.render(x);
+         and here is your code that outputs new fields to object x
+     }
+     As you can see, super allows you to access the methods of the parent class!
+
+     Task 8
+     Create a getter for the Employer to get the name of the client.
+     The name property itself, change it to _name. Showcase your work.
+
+     Task 9
+     Create a setter for the Employer to store the customer's name in the _name property.
+     The setter should check the name against a string, trim spaces. Showcase your work.
+-->
+    <div id="out-1"></div>
+    <div id="out-2"></div>
+    <script src="./Man.js"></script>
+    <script src="./Employer.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
